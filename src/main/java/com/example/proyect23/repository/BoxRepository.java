@@ -1,2 +1,7 @@
-package com.example.proyect23.repository;public interface BoxRepository {
+package com.example.proyect23.repository;
+
+import com.example.proyect23.model.Box;
+import org.springframework.data.repository.CrudRepository;
+
+public interface BoxRepository extends CrudRepository<Box,Integer> {
 }
