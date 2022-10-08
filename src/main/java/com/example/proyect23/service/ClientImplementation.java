@@ -18,14 +18,11 @@ public class ClientImplementation implements ClientService{
     public void create(Client client) {
         if(client.getId() != null){
             if(clientRepository.existsById(client.getId())){
-                return;
             }else{
                 clientRepository.save(client);
-                return;
             }
         }else {
             clientRepository.save(client);
-            return;
         }
     }
 

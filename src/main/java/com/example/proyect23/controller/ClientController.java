@@ -14,15 +14,10 @@ public class ClientController {
     private ClientImplementation clientImplementation;
 
     @PostMapping("/save")
-    public void createClient(@RequestBody Client client){
-        clientImplementation.create(client);
-        return;
-    }
+    public void createClient(@RequestBody Client client){clientImplementation.create(client);}
 
     @GetMapping("/all")
-    public List<Client> getClients(){
-        return clientImplementation.clients();
-    }
+    public List<Client> getClients(){return clientImplementation.clients();}
 
     @PutMapping("/update")
     public void updateClient(@RequestBody Client client){
