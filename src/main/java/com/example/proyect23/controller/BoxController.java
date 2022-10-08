@@ -1,7 +1,6 @@
 package com.example.proyect23.controller;
 
 import com.example.proyect23.model.Box;
-import com.example.proyect23.model.Client;
 import com.example.proyect23.service.BoxImplementation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
