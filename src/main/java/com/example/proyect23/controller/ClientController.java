@@ -14,7 +14,7 @@ public class ClientController {
     private ClientImplementation clientImplementation;
 
     @PostMapping("/save")
-    public void createDoctor(@RequestBody Client client){
+    public void createClient(@RequestBody Client client){
         clientImplementation.create(client);
         return;
     }
@@ -25,13 +25,13 @@ public class ClientController {
     }
 
     @PutMapping("/update")
-    public void updateDoctor(@RequestBody Client client){
+    public void updateClient(@RequestBody Client client){
         clientImplementation.update(client);
         return;
     }
 
     @DeleteMapping("/delete/{id}")
-    public void deleteDoctor(@PathVariable ("id") Integer id){
+    public void deleteClient(@PathVariable ("id") Integer id){
         clientImplementation.delete(id);
         return;
     }
