@@ -17,7 +17,6 @@ public class BoxController {
     @PostMapping("/save")
     public void createBox(@RequestBody Box box){
         boxImplementation.create(box);
-        return;
     }
 
     @GetMapping("/all")
@@ -28,12 +27,10 @@ public class BoxController {
     @PutMapping("/update")
     public void updateBox(@RequestBody Box box){
         boxImplementation.update(box);
-        return;
     }
 
     @DeleteMapping("/delete/{id}")
     public void deleteBox(@PathVariable ("id") Integer id){
         boxImplementation.delete(id);
-        return;
     }
 }

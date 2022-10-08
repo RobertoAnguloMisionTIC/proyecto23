@@ -22,12 +22,10 @@ public class ClientController {
     @PutMapping("/update")
     public void updateClient(@RequestBody Client client){
         clientImplementation.update(client);
-        return;
     }
 
     @DeleteMapping("/delete/{id}")
     public void deleteClient(@PathVariable ("id") Integer id){
         clientImplementation.delete(id);
-        return;
     }
 }

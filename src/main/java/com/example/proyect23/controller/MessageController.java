@@ -17,7 +17,6 @@ public class MessageController {
     @PostMapping("/save")
     public void createMessage(@RequestBody Message message){
         messageImplementation.create(message);
-        return;
     }
 
     @GetMapping("/all")
@@ -28,12 +27,10 @@ public class MessageController {
     @PutMapping("/update")
     public void updateMessage(@RequestBody Message message){
         messageImplementation.update(message);
-        return;
     }
 
     @DeleteMapping("/delete/{id}")
     public void deleteMessage(@PathVariable ("id") Integer id){
         messageImplementation.delete(id);
-        return;
     }
 }
